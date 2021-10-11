@@ -1,0 +1,164 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo-wrapper">
+            <a href="">
+                <img id="logo-img" src="./Student_portal_logo.png" alt="">
+            </a>
+        </div>
+        <div id="btn">
+            <div id="login-btn" class="register-btn hidden">Log in</div>
+            <div id="logout-btn" class="register-btn hidden">Log out</div>
+            <div id="signin-btn" class="register-btn hidden">Sign in</div>
+        </div>
+    </nav>
+    <main>
+        <section id="hero" class="hidden">
+            <div id="status-bar">
+                <div id="not-loggedin">
+                    <p>You are not logged in...</p>
+                </div>
+            </div>
+            <section id="hero-wrapper">
+                <div id="hero-text">
+                    <p id="welcome-text">Welcome to Student Portal,</p>
+                    <p id="tabbed-text">Here you can: <br> Store your Details <br> Can access Anytime <br> Access from Anywhere.
+                    </p>
+                </div>
+                <div id="hero-img-wrapper">
+                    <img id="hero-img" src="./3d-flame-man-with-info-3.png" alt="decoration image"> Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+                </div>
+            </section>
+        </section>
+        <section id="signin-section" class="hidden">
+            <form action="#" id="register-form">
+                <label>
+                    <h2>Registration Form</h2>
+                </label>
+                <div class="form_group">
+                    <label id="name-label" for="name">Name
+                    </label>
+                    <input class="form-input" type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form_group">
+                    <label id="age-label" for="age">Age</label>
+                    <input class="form-input" type="number" min="6" max="100" id="age" placeholder="Age" required>
+                </div>
+                <div class="form_group">
+                    <label for="gender">Gender</label>
+                    <label for="Male">
+                        <input class="input_radio" type="radio" name="gender" value="Male" id="male" required>
+                        Male</label>
+
+                    <label for="employed">
+                        <input class="input_radio" type="radio" name="gender" value="Female" id="female" required>
+                        Female</label>
+
+                    <label for="unemployed">
+                        <input class="input_radio" type="radio" name="gender" value="Other" id="other" required>
+                        Other</label>
+
+                </div>
+                <div class="form_group">
+                    <label id="city-label" for="city">City
+                    </label>
+                    <input class="form-input" type="text" id="city" placeholder="Enter your city" required>
+                </div>
+                <div class="form_group">
+                    <label id="number-label" for="number">Contact number</label>
+                    <input class="form-input" type="number" min="999999999" max="10000000000" id="number" placeholder="Contact Number" required>
+                </div>
+                <div class="form_group">
+                    <label id="class10-label" for="class10">Class 10 Percentage</label>
+                    <input class="form-input" type="number" min="6" max="100" id="class10" placeholder="Class 10 percentage" required>
+                </div>
+                <div class="form_group">
+                    <label id="class12-label" for="class12">Class 12 Percentage</label>
+                    <input class="form-input" type="number" min="6" max="100" id="class12" placeholder="Class 12 percentage" required>
+                </div>
+                <div class="form_group">
+                    <label id="grad_score-label" for="grad_score">Grad Score</label>
+                    <input class="form-input" type="number" min="6" max="100" id="grad_score" placeholder="Grad Score">
+                </div>
+                <div class="form_group">
+                    <label for="favourite">Select your favourite</label>
+                    <select class="form-input" name="dropdown" id="favourite">
+                        <option disabled selected value>Select an option</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="youtube">Youtube</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="current_state">What is your current state?</label>
+                    <label for="student">
+                        <input class="input_radio" type="radio" name="current_state" value="student" id="student" required>
+                        Student</label>
+
+                    <label for="employed">
+                        <input class="input_radio" type="radio" name="current_state" value="employed" id="employed" required>
+                        Employed</label>
+
+                    <label for="unemployed">
+                        <input class="input_radio" type="radio" name="current_state" value="unemployed" id="unemployed" required>
+                        Unemployed: Looking for job</label>
+                </div>
+
+                <label>
+                    <h2>Login Details</h2>
+                </label>
+                <div class="form_group">
+                    <label id="email-label" for="email">Email ID</label>
+                    <input class="form-input" type="email" id="email" placeholder="Enter your Email ID" required>
+                </div>
+                <div class="form_group">
+                    <label id="password-label" for="password">Password</label>
+                    <input class="form-input" type="password" min="6" id="password" placeholder="Password" required>
+                </div>
+                <div class="form_group">
+                    <label id="cpassword-label" for="cpassword">Confirm Password</label>
+                    <input class="form-input" type="password" min="6" id="cpassword" placeholder="Confirm Password" required>
+                </div>
+
+                <button id="submit" class="submit">SUBMIT</button>
+            </form>
+        </section>
+        <section id="login_section" class="login-section hidden">
+            <form action="#" id="login-form">
+                <label>
+                    <h2>Login Details</h2>
+                </label>
+                <div class="form_group">
+                    <label id="login_email-label" for="email">Email ID</label>
+                    <input class="form-input" type="email" id="login_email" placeholder="Enter your Email ID" required>
+                </div>
+                <div class="form_group">
+                    <label id="login_password-label" for="password">Password</label>
+                    <input class="form-input" type="password" min="6" id="login_password" placeholder="Password" required>
+                </div>
+                <button id="login_submit" class="submit">SUBMIT</button>
+                <!-- <button id="close">CLOSE</button> -->
+
+            </form>
+        </section>
+
+        <section id="table" class="table hidden">
+
+        </section>
+    </main>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

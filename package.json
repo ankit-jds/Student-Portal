@@ -1,0 +1,19 @@
+{
+  "name": "student_portal",
+  "version": "1.0.0",
+  "description": "This is a student portal to store student details.",
+  "private":"true",
+  "scripts": {
+    "start": "webpack --watch --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankit Tamboli",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.9.0"
+  }
+}

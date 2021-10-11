@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+:root {
+    --nav-height: 15vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid gray;
+    background-color: ghostwhite;
+    height: var(--nav-height);
+}
+
+.register-btn {
+    font-family: monospace;
+    font-weight: bolder;
+    border: 3px solid black;
+    border-radius: 20%;
+    margin: 0.2rem 0 0.25rem 0;
+    padding: 0.2rem;
+    background: linear-gradient(0deg, rgb(23, 133, 23), rgb(35, 255, 35));
+    color: rgb(71, 71, 71, 0.75);
+}
+
+.register-btn:hover {
+    background: linear-gradient(180deg, rgb(23, 133, 23), rgb(35, 255, 35));
+    color: black;
+    cursor: pointer;
+}
+
+#logo-img {
+    width: 9rem;
+}
+
+#status-bar {
+    display: flex;
+    justify-content: end;
+    font-weight: 550;
+}
+
+#not-loggedin {
+    font-family: monospace;
+    background-color: yellow;
+    color: black;
+    text-align: end;
+    padding: 0.1rem 0.7rem;
+    width: fit-content;
+    border-radius: 0 0 0 50px;
+}
+
+main {
+    background: linear-gradient(54deg, rgb(147, 3, 160), rgb(124, 2, 39));
+    overflow: hidden;
+}
+
+#hero-wrapper {
+    padding: 0.5rem;
+    height: calc((97vh - var(--nav-height)));
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+#hero-text {
+    width: 70%;
+    align-self: flex-end;
+    margin-left: 0.5rem;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+#hero-img-wrapper {
+    padding: 2rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+#hero-img-wrapper>a {
+    color: bisque;
+    text-decoration: none;
+}
+
+#hero-img {
+    width: 100%;
+    display: block;
+    max-height: 100%;
+}
+
+#welcome-text {
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#tabbed-text {
+    margin: 0 0 0 1.9rem
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    padding: 1rem 0;
+    height: calc((100vh - var(--nav-height)));
+}
+
+#table>table>caption {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#table>table {
+    font-size: 1.1rem;
+    text-align: left;
+    border: 3px solid black;
+}
+
+th,
+tr,
+td {
+    border: 2px solid black;
+    padding: 0.1rem 0.2rem;
+}
+
+
+/* survey form */
+
+#signin-section,
+#login_section {
+    padding: 2rem 1rem;
+    color: aliceblue;
+}
+
+#register-form,
+#login-form {
+    margin: auto;
+    width: 90%;
+    padding: 2.5rem;
+    border: 3px solid black;
+    border-radius: 8px;
+    background: linear-gradient(rgba(105, 105, 105, 0.5), rgba(64, 64, 64, 0.7));
+}
+
+.login-section {
+    display: flex;
+    align-items: center;
+    height: calc((100vh - var(--nav-height)));
+}
+
+.form_group {
+    margin: 0.5rem 0 1rem 0;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+}
+
+.form-input,
+.submit {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.form-input:hover,
+.form-input:focus {
+    border: 1.5px solid red;
+    outline: 0;
+}
+
+.input_radio,
+.input_checkbox {
+    max-width: 18px;
+    width: 100%;
+    display: inline-block;
+    margin-right: 0.6rem;
+    min-height: 1rem;
+}
+
+.submit {
+    background-color: aquamarine;
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+
+.submit:hover {
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+
+/* survey form */
+
+.hidden {
+    display: none;
+}
+
+@media (max-width:400px) {
+    * {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:500px) {
+    #hero-wrapper {
+        flex-direction: row;
+    }
+    #hero-img {
+        width: 80%;
+    }
+}
+
+@media (min-width:980px) {
+    form {
+        max-width: 50%
+    }
+}
