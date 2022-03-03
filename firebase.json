@@ -14,7 +14,7 @@
         ],
         "rewrites": [{
             "source": "**",
-            "destination": "/index.html"
+            "function":"app"
         }]
     },
     "storage": {
@@ -25,10 +25,10 @@
             "port": 8080
         },
         "functions": {
-            "port": 8080
+            "port": 8081
         },
         "firestore": {
-            "port": 8080
+            "port": 8082
         },
         "ui": {
             "enabled": true
